@@ -1,5 +1,5 @@
-![Desktop Version](./src/assets/screenshot1.png)
-![Mobile Version](./src/assets/screenshot2.png)
+![Desktop Version](./client/src/assets/screenshot1.png)
+![Mobile Version](./client/src/assets/screenshot2.png)
 
 This mail archiver is a MERN stack application and requires an internet connection and Docker to be installed on your computer for initializing.
 
