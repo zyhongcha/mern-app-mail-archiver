@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  server:
+    container_name: mail_archiver_backend
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: zyhongliu/mail_archiver_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/usr/src/app
+  client:
+    container_name: mail_archiver_frontend
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: zyhongliu/mail_archiver_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+    depends_on: [server]
